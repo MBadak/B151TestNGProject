@@ -17,7 +17,7 @@ public class C01_NegatifTest {
     //Error:
     //User with email fake@bluerentalcars.com not found
 
-    @Test
+    @Test (groups = "smoke")
     public void test01() {
         //BlueRental sayfasina gidelim
         Driver.getDriver().get(ConfigReader.getProperty("blueRentalUrl"));
